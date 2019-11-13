@@ -5,7 +5,9 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using dm.poc.core;
+using dm.poc.iservice;
 using dm.poc.iservice.Helper;
+using dm.poc.service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -54,6 +56,7 @@ namespace dm.poc.di
             TypesToRegister.ForEach(x => { if (x.DeclaringType == null) { services.AddScoped(x); } });
             RegisterService.registerServicesDI(ref services, TypesToRegister);
             services.AddScoped(typeof(IServicesProvider<>), typeof(ServicesProvider<>));
+            services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

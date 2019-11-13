@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dm.poc.core", "dm.poc.core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dm.poc.service.chevron", "dm.poc.service.chevron\dm.poc.service.chevron.csproj", "{1AEE8D23-30AB-430F-A23E-80F08A1A4638}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dm.poc.xtest", "dm.poc.xtest\dm.poc.xtest.csproj", "{20525820-03E5-4CD7-8EF8-22BF3D29110A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{1AEE8D23-30AB-430F-A23E-80F08A1A4638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AEE8D23-30AB-430F-A23E-80F08A1A4638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AEE8D23-30AB-430F-A23E-80F08A1A4638}.Release|Any CPU.Build.0 = Release|Any CPU
-		{20525820-03E5-4CD7-8EF8-22BF3D29110A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20525820-03E5-4CD7-8EF8-22BF3D29110A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20525820-03E5-4CD7-8EF8-22BF3D29110A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20525820-03E5-4CD7-8EF8-22BF3D29110A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
