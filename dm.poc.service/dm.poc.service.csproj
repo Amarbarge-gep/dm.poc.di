@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Glimpse" Version="1.8.6" />
+    <PackageReference Include="Glimpse.AspNet" Version="1.9.2" />
+    <PackageReference Include="Glimpse.Mvc5" Version="1.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\dm.poc.iservice\dm.poc.iservice.csproj" />
   </ItemGroup>
 

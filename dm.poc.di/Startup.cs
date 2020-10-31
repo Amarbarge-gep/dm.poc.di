@@ -18,6 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Glimpse;
 
 namespace dm.poc.di
 {
@@ -71,7 +72,8 @@ namespace dm.poc.di
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseMiddleware<StackifyMiddleware.RequestTracerMiddleware>();
+            //app.UseGlimpse();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
